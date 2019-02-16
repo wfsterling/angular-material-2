@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CheckinComponent } from '../checkin/checkin.component';
+import { ReportInjuryComponent } from '../report-injury/report-injury.component';
 
 const routes: Routes = [
   {
@@ -8,20 +9,12 @@ const routes: Routes = [
       component: CheckinComponent,
   },
   {
-      path: 'help',
-      component: CheckinComponent,
-  },
-  {
-    path: 'tip',
-    component: CheckinComponent,
-  },
-  {
     path: 'home',
     component: CheckinComponent,
   },
   {
-      path: 'account',
-      component: CheckinComponent,
+      path: 'report',
+      component: ReportInjuryComponent,
   },
 ];
 
@@ -31,7 +24,6 @@ const routes: Routes = [
   ],
   exports: [
       RouterModule
-  ],
-  declarations: []
+  ]
 })
 export class AppRoutingModule { }

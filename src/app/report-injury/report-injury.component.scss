@@ -1,0 +1,27 @@
+@import 'color';
+
+.main-content-left {
+    position: relative;
+    padding: 2rem;
+
+}
+.headline-content {
+    width: 45%;
+}
+.report-form {
+    position: absolute;
+    background: $surface;
+    top:1em;
+    right: 1.6em;
+    padding-top: 1em;
+    h4 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        margin: 0 3rem 4rem;
+    }
+
+
+}

@@ -11,6 +11,7 @@ import { CheckinComponent } from './checkin/checkin.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AiBubbleComponent } from './checkin/ai-bubble/ai-bubble.component';
 import { MoodSelectComponent } from './checkin/mood-select/mood-select.component';
+import { ReportInjuryComponent } from './report-injury/report-injury.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MoodSelectComponent } from './checkin/mood-select/mood-select.component
     MainMenuComponent,
     CheckinComponent,
     AiBubbleComponent,
-    MoodSelectComponent
+    MoodSelectComponent,
+    ReportInjuryComponent
   ],
   imports: [
     BrowserModule,

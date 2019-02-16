@@ -1,7 +1,8 @@
+@import 'color';
+@import 'mixins';
+@import 'typography';
 body {
-    background-color: #0012A5;
+    background-color: $surface;
+    color: #2c2c2c;
 }
-app-alert-bar {
-    position: fixed;
-    width: 100%;
-}
+

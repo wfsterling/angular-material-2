@@ -2,6 +2,8 @@
 @import 'normalize.css/normalize.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import 'mixins';
+@import 'color';
+@import 'typography';
 
 html,
 body {
@@ -11,8 +13,13 @@ body {
     min-height: 100%;
 }
 
+body {
+    background-color: white;
+    color: #2c2c2c;
+}
 .grid-inner {
     @include mdc-inner();
+    max-width: 1256px;
   }
   .form-container {
     @include mdc-cell(8,9,8,8,4);
@@ -29,3 +36,66 @@ body {
   .large-wrapper {
     @include mdc-cell(9,9,7,6,4);
   }
+#top-bar {
+  width: 100%;
+  height: 2.6em;
+  background-color: #E9E9E9;
+  color: black;
+  padding: .2em .6em;
+  box-sizing: border-box;
+  .contact {
+      float:right;
+      font-size: 1.2em;
+      padding-top: .3rem;
+  }
+}
+footer {
+  height: 2.4rem;
+  padding-top: .6rem;
+  text-align: center;
+  color: white;
+  font-size: .9rem;
+  background-color: #066080;
+  bottom: 0;
+  width: 100%;
+}
+
+
+// App
+.content-wrapper {
+  padding-top: 2em;
+  margin: 0 auto 6rem;
+  background-color: white;
+}
+#main-content {
+  width: 100%;
+  clear:both;
+  height: 427px;
+  display: grid;
+  position: relative;
+  .main-content-left {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      z-index: 4;
+      
+
+      .headline-content {
+          position: absolute;
+          border-top: 2px solid $primary;
+          border-left: 2px solid $primary;
+          top: 5em;
+          left: 7em;
+          z-index: 10;
+          h1 {
+              padding-top:1.2em;
+              padding-left: 1.2em;
+          }
+      }
+  }
+  .main-content-right {
+      grid-column-start: 7;
+      grid-column-end: 12;
+      position: relative;
+      
+  }
+}
